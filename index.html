@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>no duplicate html maker</title>
+</head>
+<body>
+  <button id="openFile">select file</button>
+  <button id="writeFile">delete duplicate</button>
+  <script>
+    // define DOM
+    var openDom = document.getElementById('openFile');
+    var writeDom = document.getElementById('writeFile');
+
+    // when 'select file' clicked
+    openDom.addEventListener("click", function() {
+      // show dialog
+      window.MyOpenSend("ping");  
+    });
+    // when delete duplicate clicked
+    writeDom.addEventListener("click", function() {
+      // delete dulicate
+      window.MyChangeSend("ping");  
+
+    });
+    
+  </script>
+</body>
+</html>
